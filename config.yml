@@ -1,0 +1,5 @@
+paths:
+  database: "data/wikiData.db"
+  lda: "data/lda_model"
+  dictionary: "data/dictionary"
+  corpus: "data/corpus"

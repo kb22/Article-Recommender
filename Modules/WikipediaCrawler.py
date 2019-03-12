@@ -3,6 +3,7 @@ import wptools
 import re
 from bs4 import BeautifulSoup
 
+
 class WikipediaCrawler:
 
     def __init__(self, db_file):
@@ -27,7 +28,8 @@ class WikipediaCrawler:
 
     def collect_data(self, category, depth):
         if depth:
-            print("Extracting data for subcategories of {} at depth {}".format(category, depth))
+            print("Extracting data for subcategories of {} at depth {}".format(
+                category, depth))
             cat = wptools.category(category)
             cat_members = cat.get_members()
 

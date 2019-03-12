@@ -11,7 +11,7 @@ parser.add_argument('-c', '--category', dest='category')
 parser.add_argument('-d', '--depth', dest='depth')
 values = parser.parse_args()
 
-# Define global variables
+# Define variables based on arguments
 if (values.depth and values.category):
     category = 'Category:' + str(values.category)
     search_depth = values.depth
@@ -26,6 +26,4 @@ if not os.path.exists('data'):
 # Collect data
 crawler = WikipediaCrawler('data/wikiData.db')
 crawler.collect_data(category, int(search_depth))
-urls = crawler.get_urls()
-print(urls)
 print("The database has been generated")
