@@ -21,3 +21,23 @@ python collectData.py --category "Machine Learning" --depth 2
 ```
 
 It creates a new folder **data** which includes a file **wikiData.db** with all the collected articles information including **id**, **category**, **url**, and **content**.
+
+### Generate LDA Model
+By running the **generateLDA.py** file, the LDA model is generated. It also stores the models and information inside **data** folder as **lda_model**, **dictionary** and **corpus**. Use the folloing command to run the file:
+
+```
+python generateData.py
+```
+
+### Recommend Articles
+Next, by invoking the **evaluator.py**, articles can be recommended. It extects one argument:
+  - query: The text query based on which you want to search for articles
+  
+```
+python evaluator.py --query "Machine learning applications"
+```
+ 
+The above command will give the output as some key words identified from the phrase and top 10 most relevant Wikipedia articles based on the search query.
+ 
+ 
+ 
