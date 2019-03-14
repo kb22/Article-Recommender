@@ -39,5 +39,7 @@ python evaluator.py --query "Machine learning applications"
  
 The above command will give the output as some key words identified from the phrase and top 10 most relevant Wikipedia articles based on the search query.
  
- 
+### Sample Output for query "Machine learning applications"
+
+![recommendations](https://github.com/kb22/Article-Recommender/blob/master/sample_images/recommendations.png)
  
