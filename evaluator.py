@@ -10,23 +10,23 @@ from Modules.Content import Content
 
 # Load configuration
 with open('config.yml') as fp:
-    config = yaml.load(fp)
+    config = yaml.load(fp, Loader = yaml.FullLoader)
 fp.close()
 
 # Database and other resources
-DATABASE = config['paths']['database']
-LDA = config['paths']['lda']
-DICTIONARY = config['paths']['dictionary']
-CORPUS = config['paths']['corpus']
+DATABASE_PATH = config['paths']['database']
+LDA_PATH = config['paths']['lda']
+DICTIONARY_PATH = config['paths']['dictionary']
+CORPUS_PATH = config['paths']['corpus']
 
 # Load all respources
-with open(DICTIONARY, 'rb') as fp:
+with open(DICTIONARY_PATH, 'rb') as fp:
     dictionary = pickle.load(fp)
     fp.close()
-with open(CORPUS, 'rb') as fp:
+with open(CORPUS_PATH, 'rb') as fp:
     corpus = pickle.load(fp)
     fp.close()
-lda = models.LdaModel.load(LDA)
+lda = models.LdaModel.load(LDA_PATH)
 
 
 def get_similarity(lda, query_vector):
@@ -60,7 +60,7 @@ sims = sorted(enumerate(sims), key=lambda item: -item[1])
 idx = 0
 pids = []
 result = 10
-content = Content(DATABASE)
+content = Content(DATABASE_PATH)
 page_ids = content.get_ids()
 print("\nCheck out the links below:")
 while result > 0:
