@@ -2,12 +2,21 @@
 Using LDA, the project recommends Wikipedia articles based on a search query.
 
 ## File Structure
+- **config.yml:** It includes the details for paths of various models and data resources which we will need
 - **collectData.py:** It includes the code to fetch Wikipedia articles based on a `category` and the `depth` of search
+- **generateLDA.py:** It includes the code to generate the LDA Model and also store it inside **data** folder
+- **evaluate.py:** It includes the code to use the LDA Model to evaluate on a query string and recommend articles 
 - **Pipfile.lock:** It includes the dependency information for easily setting up the environment using `pipenv`
 - **README.md:** It includes the documentation for this repository
+- **.gitignore:** Includes a list of files and folders to be ignored by git
+- **LICENSE:** It includes the license information
 - **Modules**
   - **\_\_init.py\_\_:** Makes the `Modules` folder accessible as module in Python
   - **WikipediaCrawler.py:** Uses `wptools` to fetch Wikipedia pages and stores them to a **wikiData.db** database inside **data** folder
+  - **Cleaner.py:** It defines a class with a set of methods that can pre-process and clean the text
+  - **Content.py:** It defines a class to pre-process the data as well as get information from the database
+- **sample_images**
+  - **recommendations.png:** Sample output of the model for the search query *Machine learning applications*
   
 ## Usage
 
