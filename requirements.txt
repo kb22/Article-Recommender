@@ -1,0 +1,29 @@
+-i https://pypi.org/simple
+beautifulsoup4==4.7.1
+boto3==1.9.114
+boto==2.49.0
+botocore==1.12.114
+bs4==0.0.1
+bz2file==0.98
+certifi==2019.3.9
+chardet==3.0.4
+docutils==0.14
+gensim==3.7.1
+html2text==2018.1.9
+idna==2.8
+jmespath==0.9.4
+lxml==4.3.2
+nltk==3.4
+numpy==1.16.2
+pycurl==7.43.0.2
+python-dateutil==2.8.0 ; python_version >= '2.7'
+pyyaml==5.1
+requests==2.21.0
+s3transfer==0.2.0
+scipy==1.2.1
+singledispatch==3.4.0.3
+six==1.12.0
+smart-open==1.8.0
+soupsieve==1.8
+urllib3==1.24.1 ; python_version >= '3.4'
+wptools==0.4.17
