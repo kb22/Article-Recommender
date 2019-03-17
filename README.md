@@ -7,6 +7,7 @@ Using LDA, the project recommends Wikipedia articles based on a search query.
 - **generateLDA.py:** It includes the code to generate the LDA Model and also store it inside **data** folder
 - **evaluator.py:** It includes the code to use the LDA Model to evaluate on a query string and recommend articles 
 - **Pipfile.lock:** It includes the dependency information for easily setting up the environment using `pipenv`
+- **requirements.txt:** It includes the required packages for the project to work
 - **README.md:** It includes the documentation for this repository
 - **.gitignore:** Includes a list of files and folders to be ignored by git
 - **LICENSE:** It includes the license information
