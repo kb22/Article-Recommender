@@ -2,3 +2,7 @@
 /data
 Pipfile
 .Python
+
+/bin
+/lib
+/share
